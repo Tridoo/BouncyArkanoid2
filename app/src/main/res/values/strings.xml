@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bouncy Arkanoid 2</string>
+    <string name="loading">LOADING APP</string>
+    <string name="wait">PLEASE WAIT</string>
+
+    <string name="action_settings">Delete all</string>
+
+    <string name="mode_ready">Ready\nTap to play</string>
+    <string name="mode_pause">Pause</string>
+    <string name="mode_lose">GAME OVER</string>
+    <string name="mode_win">Win</string>
+    <string name="score_text">0</string>
+    <string name="menu_start">Start</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_resume">Resume</string>
+    <string name="message_stopped">Stopped</string>
+
+    <string name="instr_tytul">How to play</string>
+    <string name="instr_cel">Target\n hit to increase score</string>
+    <string name="instr_przeszkody">Mobile barriers moves horizontally</string>
+    <string name="instr_aktywator1">Hit to make game easer</string>
+    <string name="instr_aktywator2">Don`t touch or else...</string>
+    <string name="instr_pilka">Ball, don`t drop it</string>
+    <string name="instr_paletka">Paddle\n increase ball speed</string>
+
+    <string name="reklama_baner_test_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="reklama_menu">ca-app-pub-2530185123591218/4883986483</string>
+    <string name="reklama_instrukcje">ca-app-pub-2530185123591218/7837452883</string>
+    <string name="reklama_wyniki">ca-app-pub-2530185123591218/9314186085</string>
+    <string name="reklama_gra">ca-app-pub-2530185123591218/4744385687</string>
+
+</resources>

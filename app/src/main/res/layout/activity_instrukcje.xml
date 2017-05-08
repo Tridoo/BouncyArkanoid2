@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#106299">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewInstrukcje"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/reklama_instrukcje"/>
+
+    <TextView
+        android:id="@+id/tv_how"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adViewInstrukcje"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instr_tytul"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/font24"
+        android:background="@drawable/ramka_how_to_play"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_how"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:alpha=".8"
+        android:src="@drawable/green_ball" />
+
+    <TextView
+        android:id="@+id/tv_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instr_cel"
+        android:textColor="#ffffffff"
+        android:background="@drawable/ramka_target"
+        android:gravity="center"
+        android:layout_alignTop="@+id/imageView3"
+        android:textSize="@dimen/font16"
+        android:layout_marginTop="-10dp"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:layout_marginRight="-20dp" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="score counter"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/font16"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toStartOf="@+id/tv_0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tv_0"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/font32"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="30dp"
+        android:alpha=".8"
+        android:src="@drawable/red_ball"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instr_przeszkody"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:background="@drawable/ramka_mobile"
+        android:textSize="@dimen/font16"
+        android:layout_marginTop="-5dp"
+        android:textIsSelectable="false" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".8"
+        android:src="@drawable/red_ball"
+        android:layout_below="@+id/tv_mobile"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignLeft="@+id/tv_mobile"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".8"
+        android:src="@drawable/red_ball"
+        android:layout_below="@+id/tv_mobile"
+        android:layout_marginTop="-5dp"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignRight="@+id/tv_mobile"
+        android:layout_marginRight="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView5"
+        android:src="@drawable/kulka_pomarancz"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/tv_hit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView7"
+        android:text="@string/instr_aktywator1"
+        android:textColor="#ffffffff"
+        android:background="@drawable/ramka_hit_to"
+        android:gravity="center"
+        android:layout_alignParentBottom="false"
+        android:textSize="@dimen/font16"
+        android:layout_marginBottom="-7dp"
+        android:layout_alignBottom="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/kulka_fiolet"
+        android:layout_marginLeft="-12dp" />
+
+    <TextView
+        android:id="@+id/tv_dont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView8"
+        android:text="@string/instr_aktywator2"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:background="@drawable/ramka_dont_touch"
+        android:textSize="@dimen/font16"
+        android:layout_marginBottom="-7dp"
+        android:layout_alignBottom="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".8"
+        android:src="@drawable/gray_ball"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView8"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instr_pilka"
+        android:textColor="#ffffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView9"
+        android:gravity="center"
+        android:background="@drawable/ramka_ball"
+        android:layout_marginTop="-5dp"
+        android:textSize="@dimen/font16" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".8"
+        android:src="@drawable/yellow_ball"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_paddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView10"
+        android:text="@string/instr_paletka"
+        android:textColor="#ffffffff"
+        android:background="@drawable/ramka_paddle"
+        android:gravity="center"
+        android:textSize="@dimen/font16"
+        android:layout_toLeftOf="@+id/imageView10"
+        android:layout_marginRight="-5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView11"
+        android:src="@drawable/lapka"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/imageView10"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/imageView10"
+        android:layout_marginLeft="20dp" />
+
+</RelativeLayout>
+
+

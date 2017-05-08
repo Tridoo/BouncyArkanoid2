@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#106299"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="SCORES"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="#2a5775"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/font18"
+        android:layout_alignTop="@+id/tool_bar"
+        android:gravity="bottom|center_horizontal" />
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/tool_bar" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewWyniki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/reklama_wyniki"
+        android:layout_alignParentLeft="true">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR PROGRESS"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/font18"
+        android:textColor="#ffffffff"
+        android:background="@drawable/scores_obwodka_przy_napisach"
+        android:gravity="center" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/graph"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR POSITION "
+        android:id="@+id/textView4"
+        android:layout_below="@+id/graph"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/scores_obwodka_przy_napisach"
+        android:gravity="center"
+        android:textSize="@dimen/font18"
+        android:textColor="#ffffffff" />
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:useDefaultMargins="false">
+
+    </GridLayout>
+</ScrollView>
+
+</RelativeLayout>

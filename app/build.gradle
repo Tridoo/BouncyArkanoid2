@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "tridoo.bouncyarkanoid2"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 3
+        versionName "1.0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.google.android.gms:play-services:6.+'
+    compile 'com.jjoe64:graphview:4.1.0'
+    compile group: 'com.google.guava', name: 'guava', version: '15.0'
+}

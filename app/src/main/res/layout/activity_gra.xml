@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<tridoo.bouncyarkanoid2.GraWidok
+    android:id="@+id/gamearea"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/gameAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewGra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/reklama_gra"
+            >
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/wynik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="top"
+            android:text="@string/score_text"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/font24"
+            android:visibility="visible"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:text="@string/mode_ready"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/font24"
+            android:minLines="3"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/bonus"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/font24"
+            android:minLines="1"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bonusZlapany"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/status"
+            android:layout_marginBottom="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bonus_progres"
+            android:layout_alignParentStart="true"
+            android:alpha="0.6" />
+    </RelativeLayout>
+</FrameLayout>
